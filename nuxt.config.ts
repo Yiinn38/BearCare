@@ -1,16 +1,16 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineNuxtConfig({
-  compatibilityDate: "2025-07-15",
-  css: ["~/assets/css/main.css"],
+  compatibilityDate: '2025-07-15',
+  css: ['~/assets/css/main.css'],
   vite: {
     plugins: [...tailwindcss()],
   },
   devtools: { enabled: true },
   app: {
     head: {
-      titleTemplate: "%s | BearCare",
-      title: "Inicio",
+      titleTemplate: '%s | BearCare',
+      title: 'Inicio',
     },
   },
 });
