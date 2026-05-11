@@ -4,9 +4,13 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   css: ["~/assets/css/main.css"],
   vite: {
-    plugins: [
-      ...tailwindcss(),
-    ],
+    plugins: [...tailwindcss()],
   },
   devtools: { enabled: true },
+  app: {
+    head: {
+      titleTemplate: "%s | BearCare",
+      title: "Inicio",
+    },
+  },
 });

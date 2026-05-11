@@ -1,23 +1,40 @@
-# Nuxt Minimal Starter
+# BearCare – Estructura del proyecto
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### 📁 Raíz del proyecto
+- `nuxt.config.ts` – Configuración principal de Nuxt (plugins, módulos, metadatos).
+- `package.json` – Dependencias y scripts (pnpm).
+- `tsconfig.json` – Configuración de TypeScript generada por Nuxt.
+- `.gitignore` – Archivos y carpetas excluidos del control de versiones.
+
+### 📁 app/ – Código fuente de la aplicación
+- **`app.vue`** – Componente raíz que envuelve la app con `<NuxtLayout>`.
+- **`assets/css/main.css`** – Estilos globales (Tailwind CSS v4 importado aquí).
+- **`pages/`** – Páginas con enrutamiento automático.
+- **`layouts/`** – Plantillas reutilizables que envuelven páginas.
+  - `default.vue` – Layout por defecto (header, footer, main).
+  - `auth.vue` – Layout para autenticación (ejemplo).
+- **`components/`** – Componentes Vue reutilizables (botones, cards, etc.).
+- **`composables/`** – Composición de lógica reactiva (`useHead`, `useCustom`).
+- **`middleware/`** – Guardias de navegación que se ejecutan antes de cargar una ruta.
+- **`plugins/`** – Plugins de Vue que se ejecutan antes de montar la app.
+- **`server/`** – API routes y middleware del servidor (Nitro).
+
+### 📁 public/ – Archivos públicos
+- `favicon.ico` – Ícono de la pestaña del navegador.
+- `robots.txt` – Instrucciones para motores de búsqueda.
+
+### 📁 .nuxt/ – Archivos generados (no modificar)
+Contiene el código compilado durante el desarrollo y la construcción.
+
+### 📁 node_modules/ – Dependencias instaladas
+
 
 ## Setup
 
 Make sure to install dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -25,17 +42,7 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -43,33 +50,11 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
 pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
