@@ -12,6 +12,7 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@tabler/icons-vue": "^3.44.0",
     "@tailwindcss/vite": "^4.3.0",
     "nuxt": "^4.4.4",
     "tailwindcss": "^4.3.0",
