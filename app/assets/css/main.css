@@ -1,1 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import 'tailwindcss';
+
+@theme {
+  --jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-sans: var(--jakarta);
+
+  --color-bearcare-cyan: #3ab9b6;
+  --color-bearcare-navy: #0f304e;
+  --color-bearcare-slate: #232a3a;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden !important;
+  }
+}
